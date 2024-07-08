@@ -70,13 +70,13 @@ const HallOfFame = () => {
             <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 flex">
               <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white flex flex-col">
                 <img className="w-full" src={student.image} alt={`${student.name}'s profile`} />
-                <div className="px-6 py-4">
+                <div className="px-6 py-4 flex-grow">
                   <div className="font-bold text-xl mb-2">{student.name}</div>
                   <p className="text-gray-700 text-base">{student.description}</p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
                   <a href={student.linkedin} target="_blank" rel="noopener noreferrer"
-                     className="text-blue-500 hover:underline flex align-bottom">
+                     className="text-blue-500 hover:underline">
                     LinkedIn Profile
                   </a>
                 </div>
